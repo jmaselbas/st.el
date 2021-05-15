@@ -1,0 +1,14 @@
+st.el - simple terminal emacs support
+-------------------------------------
+
+Installation
+------------
+Edit the Makefile to match your local setup (st.el is installed into
+the /usr/local/share/emacs/lisp by default):
+
+    make install PREFIX=$HOME/.emacs.d/lisp
+
+Append the install prefix to your emacs load path, in .emacs:
+
+    (add-to-list 'load-path "~/.emacs.d/lisp/")
+

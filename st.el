@@ -36,7 +36,6 @@ The title is constructed from `frame-title-format'."
 
 (defun terminal-init-st ()
   "Terminal initialization function for st."
-  (message "%s" (display-color-cells))
   (xterm-register-default-colors xterm-standard-colors)
   (tty-set-up-initial-frame-faces)
   (define-key input-decode-map "\e[1~" [home])

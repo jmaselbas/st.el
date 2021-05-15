@@ -40,6 +40,15 @@ The title is constructed from `frame-title-format'."
   (tty-set-up-initial-frame-faces)
   (define-key input-decode-map "\e[1~" [home])
   (define-key input-decode-map "\e[4~" [end])
+  (define-key input-decode-map "\e[J" [C-end])
+  (define-key input-decode-map "\e[1;5F" [C-end])
+
+  (define-key input-decode-map "\e[M" [C-delete])
+  (define-key input-decode-map "\e[3;5~" [C-delete])
+
+  (define-key input-decode-map "\e[5;5~" [C-prior])
+  (define-key input-decode-map "\e[6;5~" [C-next])
+
   (define-key input-decode-map "\e[1;2A" [S-up])
   (define-key input-decode-map "\e[1;2B" [S-down])
   (define-key input-decode-map "\e[1;2C" [S-right])
